@@ -202,13 +202,13 @@ hr#small {
 }
 
 @media (max-width: 1020px) and (min-width: 768px) {
-    #pclogo {
+    #pclogo,#minipc {
         display: none;
     }
 }
 
 @media (max-width: 767px) {
-    #pclogo {
+    #pclogo,#minipc {
         display: none;
     }
 
