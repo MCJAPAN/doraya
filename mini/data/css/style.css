@@ -279,7 +279,7 @@ hr#small {
 }
 
 @media (min-width: 1021px) {
-    #smlogo {
+    #smlogo,#minisp {
         display: none;
     }
     #pclogo{
