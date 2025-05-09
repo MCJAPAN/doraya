@@ -285,13 +285,13 @@ hr#small {
     #pclogo{
         position: relative;
         bottom: 18px;
-        left: 30px;
+        left: 122px;
     }
     #minipc {
         scale: 0.5;
         position: relative;
-        right: 46px;
         bottom: 5px;
+        left: 45px;
     }
     #index img{
         scale: 0.8;
