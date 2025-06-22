@@ -1,0 +1,17 @@
+{
+  "name": "DORAYA | ドラや",
+  "short_name": "ドラや",
+  "description": "ドラやWebアプリは、お店「ドラや」の情報を入手する唯一の公式Webアプリです。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/data/img/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+   "orientation": "portrait"
+}
