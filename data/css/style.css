@@ -297,6 +297,92 @@ dib.table-container{
     line-height:1;
 }
 
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.service-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 1100px; /* ← ここ重要（広げる） */
+}
+
+#flex,
+#flex2 {
+  width: 100%;
+  max-width: 1200px;
+}
+#about,
+#news,
+#readme,
+#movie {
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  #flex2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  #about,
+  #news {
+    width: 48%;
+  }
+}
+
+header#navi {
+  width: 100%;
+  padding: 10px;
+}
+
+#pclogo,
+#smlogo {
+  max-width: 200px;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+
+  header#navi {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  #clock {
+    font-size: 12px;
+  }
+
+  #mini {
+    width: 80px;
+    height: 40px;
+  }
+
+  #pclogo {
+    display: none;
+  }
+
+  #smlogo {
+    display: block;
+    width: 50%;
+  }
+}
+
+body {
+  margin: 0;
+  padding-top: 100px;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 /* スマホ */
 @media (max-width: 768px) {
   .service-table {
