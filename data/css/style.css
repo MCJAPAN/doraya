@@ -293,6 +293,10 @@ hr#small {
   font-weight: bold;
 }
 
+dib.table-container{
+    line-height:1;
+}
+
 /* スマホ */
 @media (max-width: 768px) {
   .service-table {
