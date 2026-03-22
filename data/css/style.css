@@ -395,3 +395,54 @@ body {
         display: none;
     }
 }
+
+#news {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+@media (max-width: 768px) {
+  #news {
+    max-height: 300px;
+  }
+}
+#news img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+#flex,
+#flex2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#about,
+#news,
+#readme,
+#movie {
+  width: 95%;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+@media (min-width: 768px) {
+  #flex2 {
+    display: flex;
+    gap: 20px;
+  }
+
+  #about,
+  #news {
+    width: 50%;
+  }
+}
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+header#navi {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
