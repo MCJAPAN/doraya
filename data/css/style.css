@@ -446,3 +446,30 @@ header#navi {
   padding: 10px;
   box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+
+  #about,
+  #news {
+    max-height: 300px; /* ← 両方同じにする */
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+
+}
+
+#about,
+#news {
+  min-height: 0;
+}#about::-webkit-scrollbar,
+#news::-webkit-scrollbar {
+  width: 6px;
+}
+
+#about::-webkit-scrollbar-thumb,
+#news::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+
