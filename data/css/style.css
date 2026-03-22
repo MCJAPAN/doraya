@@ -256,6 +256,49 @@ hr#small {
         font-size: 1.1rem;
     }
 }
+.table-container {
+  overflow-x: auto;
+}
+
+.service-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 900px;
+}
+
+.service-table th {
+  background: #111827;
+  color: white;
+  padding: 10px;
+}
+
+.service-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.service-table tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+/* ○×だけ色変更（データは変えてない） */
+.yes {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.no {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+  .service-table {
+    font-size: 12px;
+  }
+}
 
 @media (min-width: 1021px) {
     #smlogo {
