@@ -10,20 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="data/css/style.css">
     <link rel="icon" href="data/img/icon.png">
-    <meta name="robots" content="noindex, nofollow"> 
+    <meta name="robots" content="noindex, nofollow">
     <link rel="manifest" href="manifest.json">
 </head>
-
 
 <body>
     <header id="navi">
         <div id="clock">
-            <span id="date"></span><br>
-            <span id="time"></span>
+            <span id="date">
+            </span>
+            <br>
+            <span id="time">
+            </span>
         </div>
         <img src="data/img/logo_pc.png" alt="ドラや" id="pclogo">
         <img src="data/img/logo_sp.png" alt="ドラや" id="smlogo">
-        <a href="/mini"><button id="mini"><img src="mini/data/img/mini.png"></button></a>
+        <a href="/mini">
+            <button id="mini">
+                <img src="mini/data/img/mini.png">
+            </button>
+        </a>
     </header>
     <div id="flex">
         <div id="flex2">
@@ -41,11 +47,21 @@
             <div id="news">
                 <h1>お知らせ</h1>
                 <hr>
-                <small><b><h2>DORAYA YOKOHAMA BAY 2026 開催</h2></b></small>
+                <small>
+                    <b>
+                        <h2>DORAYA YOKOHAMA BAY 2026 開催</h2>
+                    </b>
+                </small>
                 <p>2026年2月、長浜本店にてDORAYA YOKOHAMA BAY 2026を行います。</p>
                 <p>詳細はDORAYA BAYのホームページにてご確認ください。</p>
-                <small><hr id="small"></small>
-                <small><b><h2>DORAYAのホームページ開設</h2></b></small>
+                <small>
+                    <hr id="small">
+                </small>
+                <small>
+                    <b>
+                        <h2>DORAYAのホームページ開設</h2>
+                    </b>
+                </small>
                 <p>2025年5月10日、長浜本店にてDORAYA MINIが行われます。</p>
                 <p>それに伴い、DORAYAのホームページを開設いたしました。</p>
             </div>
@@ -54,7 +70,126 @@
             <h1>お支払い</h1>
             <p>ここでは、各サービスごとの機能と値段を一覧で見られます。</p>
             <br>
-            <p>{for-chatgpt:ここに表を挿入}</p>
+            <div class="table-container">
+                <table class="service-table">
+                    <thead>
+                        <tr>
+                            <th>サービス名</th>
+                            <th>ワークショップ</th>
+                            <th>ブックショップ</th>
+                            <th>レストラン</th>
+                            <th>シアター(映画)</th>
+                            <th>休憩室</th>
+                            <th>客室</th>
+                            <th>ウェルカムドリンク</th>
+                            <th>風呂</th>
+                            <th>入場料</th>
+                            <th>上映料</th>
+                            <th>食事代(朝食)</th>
+                            <th>食事代(昼食)</th>
+                            <th>食事代(夕食)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DORAYA</td>
+                            <td class="no">×</td>
+                            <td class="yes">○</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>d-RUNCH!</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td class="yes">○</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>DORAYA MINI</td>
+                            <td class="no">×</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="no">×</td>
+                            <td class="yes">○</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td>200</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>200</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>DORAYA +</td>
+                            <td class="no">×</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td class="yes">○</td>
+                            <td>300</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td>DORAYA SPECIAL</td>
+                            <td class="no">×</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="no">×</td>
+                            <td class="no">×</td>
+                            <td class="yes">○</td>
+                            <td>500</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>600</td>
+                        </tr>
+                        <tr>
+                            <td>DORAYA PREMIUM</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td class="yes">○</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>300</td>
+                            <td>400</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <br>
             <p>なお、DORAYA BAY(1泊2日)の場合、入場料+上映料+食事代x2+宿泊料+宿泊基本料がお支払総額です。</p>
             <p>ご了承ください。</p>
@@ -66,20 +201,18 @@
             <p>これより後のこと以外はジョークです。</p>
             <p>コピーライト及び出典</p>
             <p>技術協力 ChatGPT 4o-mini</p>
-            <p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;GPT-4o</p>
+            <p>             GPT-4o</p>
             <p>背景画像 UTAIRO BOX</p>
             <p>開発ツール ペイント</p>
-            <p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;ペイント3D</p>
-            <p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;VSCode</p>
-            <p>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Firefox Developer Edition</p>
+            <p>              ペイント3D</p>
+            <p>          VSCode</p>
+            <p>                            Firefox Developer Edition</p>
             <small>
-                <p>&copy;2021-2025 DORAYA All Right Reversed.</p>
             </small>
+            <p>©2021-2025 DORAYA All Right Reversed.</p>
         </div>
     </div>
-    
     <script src="data/js/script.js"></script>
 </body>
 
 </html>
-
