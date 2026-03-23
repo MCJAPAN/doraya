@@ -61,7 +61,7 @@ body {
 #about,
 #news,
 #readme,
-#movie {
+#event_info {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,7 +82,7 @@ body {
 }
 
 #readme,
-#movie {
+#event_info {
     width: 92%;
     line-height: 0.7;
 }
@@ -111,7 +111,7 @@ body {
 }
 
 #readme,
-#movie {
+#event_info {
     width: 95%;
     background: rgba(255, 255, 255, 0.9);
     padding: 2em;
@@ -154,7 +154,7 @@ body {
 }
 
 #readme,
-#movie {
+#event_info {
     display: block;
     width: 93%;
     margin: 20px auto;
@@ -251,7 +251,7 @@ hr#small {
         width: 90%;
         height: 32rem;
     }
-    #readme,#movie{
+    #readme,#event_info{
         line-height: 1.2;
         font-size: 1.1rem;
     }
@@ -317,7 +317,7 @@ dib.table-container{
 #about,
 #news,
 #readme,
-#movie {
+#event_info {
   width: 100%;
   max-width: 1100px;
   margin: 20px auto;
@@ -421,7 +421,7 @@ body {
 #about,
 #news,
 #readme,
-#movie {
+#event_info {
   width: 95%;
   max-width: 1100px;
   margin: 20px auto;
