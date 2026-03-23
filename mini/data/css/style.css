@@ -167,7 +167,9 @@ body {
 
 #flex,
 #flex2 {
-    width: 100vw;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 button:not(#index) {
@@ -301,4 +303,72 @@ hr#small {
     #index{
         width: 120px;
     }
+}
+
+
+/* スクロール統一 */
+#about,
+#news {
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 10px;
+  min-height: 0;
+}
+@media (max-width: 768px) {
+  #about,
+  #news {
+    max-height: 300px;
+  }
+}
+
+#about,
+#news,
+#readme {
+  width: 95%;
+  max-width: 1100px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  #flex2 {
+    display: flex;
+    gap: 20px;
+  }
+
+  #about,
+  #news {
+    width: 50%;
+  }
+}
+
+header#navi {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  header#navi {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  #pc {
+    display: none;
+  }
+
+  #sp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #smlogo,
+  #minisp {
+    width: 40%;
+    height: auto;
+  }
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
 }
